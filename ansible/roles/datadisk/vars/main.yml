@@ -1,0 +1,13 @@
+---
+device: /dev/sdc
+partitions:
+  - mountPath: /part1
+    start: 1KiB
+    end: 4GiB
+    fileSystemType: xfs
+  - mountPath: /part2
+    start: 4GiB
+    end: 9GiB
+    fileSystemType: ext4
+
+failureMessage: "Some problem occured while creating partitions or mounting"
